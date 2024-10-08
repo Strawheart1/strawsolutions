@@ -1,0 +1,234 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  /* outline: 1px solid white; */
+}
+body {
+  font-family: "Rethink Sans", sans-serif;
+}
+.top-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+  margin: 0;
+  color: white;
+  padding-bottom: 20px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  gap: 0px;
+  justify-content: center;
+  padding: 10px 0px 0px;
+  margin-bottom: 30px;
+}
+ul {
+  display: flex;
+  gap: 20px;
+  /* border: 1px solid white; */
+  border-radius: 50px;
+  backdrop-filter: blur(10px);
+  padding: 10px 15px;
+  /* padding: 8px 10px; */
+}
+.nav-menu ul > a {
+  list-style: none;
+  text-decoration: none;
+}
+nav p {
+  padding: 10px 15px;
+  font-size: 1rem;
+  color: white;
+}
+
+.link-a {
+  background-color: dodgerblue;
+  border-radius: 30px;
+}
+.link-b:hover {
+  background-color: rgba(5, 20, 95, 0.596);
+  border-radius: 30px;
+  transition: 0.5s;
+}
+.tag {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 20px 50px 50px;
+  font-size: 12px;
+  gap: 30px;
+}
+.tag a {
+  border: 1px solid rgb(29, 28, 28);
+  line-height: 24px;
+  color: #c4d8c4;
+  align-items: center;
+  justify-content: center;
+  /* gap: 4px; */
+  padding: 8px 14px;
+  border-radius: 30px;
+  background-color: #0a0c1e;
+  font-weight: 500;
+  font-size: 15px;
+  text-decoration: none;
+}
+.tag h1 {
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 600;
+  text-align: center;
+}
+.tag p {
+  text-align: center;
+  font-size: 18px;
+  color: #a7adbe;
+}
+
+/* .button-a  {
+  padding: 10px 16px;
+  border-radius: 30px;
+  border: 1px solid blue;
+  background: dodgerblue;
+  cursor: pointer;
+  color: white;
+  font-size: 1rem;
+} */
+/* .button-a :hover {
+  color: white;
+  background: rgba(3, 44, 85, 0.653);
+  border: none;
+  transition: 1s;
+} */
+.button-a {
+  background-color: dodgerblue !important;
+  color: #fff !important;
+  border: none !important;
+  padding: 10px 16px !important;
+  cursor: pointer;
+  font-size: 1rem !important;
+}
+.button-a:hover {
+  color: white;
+  background: rgba(3, 44, 85, 0.653);
+  border: none;
+  transition: 1s;
+}
+/* feature part */
+#feature {
+  background-color: rgb(19, 10, 76);
+  color: white;
+  padding-bottom: 30px;
+}
+.title-text {
+  padding-top: 30px;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+}
+.title-text h2 {
+  color: #fff;
+  font-size: 2.625rem;
+  font-weight: 600;
+  line-height: 50.4px;
+}
+
+.title-text p {
+  font-size: 18px;
+  line-height: 25.2px;
+  color: #a7adbe;
+}
+
+.cards {
+  margin: 10px;
+  display: flex;
+  gap: 24px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.card-tab {
+  background-image: url(./images/cover-card.jpg);
+  object-fit: fill;
+  max-width: 350px;
+  height: 250px;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 0px 30px 30px;
+  border-radius: 12px;
+}
+.card-tab h3 {
+  margin-top: 10px;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+.card-tab p {
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 25.5px;
+  color: #6d7792;
+}
+.last-text {
+  height: 50vh;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+}
+.last-text h2 {
+  font-size: 40px;
+  line-height: 45px;
+  letter-spacing: 1px;
+}
+.last-text p {
+  line-height: 45.6px;
+  font-size: 38px;
+  display: inline;
+  color: #00000080;
+  letter-spacing: -0.2px;
+}
+.line-last {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  margin: 15px 20px;
+}
+.flex {
+  display: flex;
+  gap: 20px;
+}
+.flex a:hover {
+  color: darkblue;
+}
+@media (max-width: 480px) {
+  .tag {
+    margin: 0 auto;
+  }
+  .tag a {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+  .hero h1 {
+    font-size: 1.6rem;
+    line-height: 30px;
+  }
+  .tag p {
+    font-size: 1rem;
+    width: 80%;
+  }
+  .line-last{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
